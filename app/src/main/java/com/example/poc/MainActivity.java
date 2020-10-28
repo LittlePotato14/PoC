@@ -2,6 +2,7 @@ package com.example.poc;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
@@ -16,5 +17,10 @@ public class MainActivity extends AppCompatActivity {
 
     public void disable(View v){
         v.setEnabled(false);
+    }
+
+    public void launchMap(View v){
+        Intent intent = new Intent(this, MapActivity.class);
+        startActivity(intent);
     }
 }

@@ -12,13 +12,14 @@
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="124dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="28dp"
+        android:layout_width="100dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="16dp"
         android:background="@drawable/my_button_bg"
         android:enabled="true"
         android:onClick="disable"
         android:text="@string/check_disable"
+        android:textAllCaps="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -38,9 +39,11 @@
 
     <Button
         android:id="@+id/button3"
+        android:textAllCaps="false"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/my_button_bg"
+        android:onClick="launchMap"
         android:text="@string/show_map"
         app:layout_constraintBottom_toTopOf="@+id/button2"
         app:layout_constraintEnd_toEndOf="parent"
